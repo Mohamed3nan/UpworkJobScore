@@ -155,6 +155,11 @@ Michael Xieyang Liu | [Website](https://lxieyang.github.io) -->
   <p align="center">Upwork Job Score</p>
 </h1>
 
+## Extension Screenshots
+![image](src/assets/img/screenshots/1.png)
+![image](src/assets/img/screenshots/2.png)
+![image](src/assets/img/screenshots/3.png)
+
 ## Overview
 Upwork Job Score is a browser extension designed to help freelancers by rating job postings based on various criteria.
 This intelligent scoring system allows users to quickly identify the most promising opportunities, helping them focus on high-quality jobs and avoid wasting connects on low-quality jobs. It enables freelancers to make better decisions when selecting jobs to apply for.

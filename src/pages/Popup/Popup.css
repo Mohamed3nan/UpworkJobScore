@@ -1,4 +1,4 @@
-.App {
+/* .App {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -42,4 +42,162 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App {
+  width: auto;
+  text-align: center;
+  background-color: white #282c34;
+  color: #181818;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-header {
+  padding: 20px;
+}
+
+.App-header>h1 {
+  margin-top: 0px;
+}
+
+.App-logo {
+  height: 100px;
+}
+
+
+.score-circles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.score-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 10%;
+  border: 2px solid #181818;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.score-circle .score {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.green {
+  background-color: #00a86b;
+}
+
+.light-green {
+  background-color: #9acd32;
+}
+
+.yellow {
+  background-color: #ffd700;
+}
+
+.red {
+  background-color: #ff4500;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.min-score-setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #181818;
+}
+
+.min-score-setting input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 0;
+  accent-color: #181818;
+}
+
+.min-score-setting input[type="range"]:hover {
+  opacity: 1;
+}
+
+.min-score-setting input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #181818;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.min-score-setting input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: #181818;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.App-footer {
+  background-color: #181818;
+  padding: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+.footer-credit {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-links a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.footer-links .separator {
+  margin: 0 5px;
+}
+
+.refresh-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.refresh-icon {
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+}
+
+.refresh-icon:hover {
+  transform: rotate(180deg);
+}
+
+.score-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.score-input-container input[type="range"] {
+  flex-grow: 1;
+  margin-right: 10px;
 }

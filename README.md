@@ -1,4 +1,4 @@
-<img src="src/assets/img/icon-128.png" width="64"/>
+<!-- <img src="src/assets/img/icon-128.png" width="64"/>
 
 # Chrome Extension (MV3) Boilerplate with React 18 and Webpack 5
 
@@ -147,4 +147,48 @@ ApiCall({ key: secrets.key });
 
 ---
 
-Michael Xieyang Liu | [Website](https://lxieyang.github.io)
+Michael Xieyang Liu | [Website](https://lxieyang.github.io) -->
+
+# Upwork Job Score Browser Extension
+<h1 align="center">
+  <img src="src/assets/img/logo.png" width="100"/>
+  <p align="center">Upwork Job Score</p>
+</h1>
+
+## Overview
+Upwork Job Score is a browser extension designed to help freelancers by rating job postings based on various criteria.
+This intelligent scoring system allows users to quickly identify the most promising opportunities, helping them focus on high-quality jobs and avoid wasting connects on low-quality jobs. It enables freelancers to make better decisions when selecting jobs to apply for.
+
+
+## How it works
+Upwork Job Scorer analyzes each job posting and assigns a score based on several key factors. These scores help you determine which jobs are worth applying to.
+
+The scoring system takes into account the following factors:
+
+- **Client Payment Status:** Checks if the client has a verified payment method.
+- **Proposal Size:** Evaluates the number of proposals submitted by freelancers.
+- **Estimated Budget:** Analyzes the client's budget for the project.
+- **Estimated Time to Complete:** Evaluates the project's timeline.
+- **Client Rating:** Considers the client's rating on Upwork.
+- **Client Payment History:** Checks how much the client has spent.
+- **Job Posting Time:** Looks at how recently the job was posted.
+- **Experience Level Required:** Determines the experience level the client is seeking.
+- **Client's Country:** Evaluates if the client is from a high-paying country.
+- **Featured Job:** Checks if the job is marked as featured.
+
+Jobs are then tagged with different badge colors based on the score:
+- **Green Badge (7.0+):** 🟢 Excellent
+- **Light Green Badge (5.0-7.0):** 🟢 Good
+- **Yellow Badge (3.0-5.0):** 🟡 Average
+- **Red Badge (below 3.0):** 🔴 Poor
+
+## Usage
+1. Install the extension from the Chrome Web Store.
+2. Go to the Upwork "Find work" page.
+3. (Optional) Click on the Upwork Job Score icon in the Chrome toolbar to set the minimum score for hiding jobs (default is 0).
+
+## Contributing
+We’re open to contributions! If you find any bugs or have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+## Disclaimer
+Upwork Job Scorer is not affiliated, associated, authorized, sponsored by, endorsed by, or in any way officially or non-officially connected with Upwork or any of its subsidiaries or its affiliates. It is an open-source project developed to help freelancers make better choices and decisions when applying for jobs.

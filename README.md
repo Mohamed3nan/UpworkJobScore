@@ -155,17 +155,16 @@ Michael Xieyang Liu | [Website](https://lxieyang.github.io) -->
   <p align="center">Upwork Job Score</p>
 </h1>
 
-## Extension Screenshots
 ![image](src/assets/img/screenshots/1.png)
 ![image](src/assets/img/screenshots/2.png)
 ![image](src/assets/img/screenshots/3.png)
 
-## Overview
+## ➡️Overview
 Upwork Job Score is a browser extension designed to help freelancers by rating job postings based on various criteria.
 This intelligent scoring system allows users to quickly identify the most promising opportunities, helping them focus on high-quality jobs and avoid wasting connects on low-quality jobs. It enables freelancers to make better decisions when selecting jobs to apply for.
 
 
-## How it works
+## ➡️How it works
 Upwork Job Scorer analyzes each job posting and assigns a score based on several key factors. These scores help you determine which jobs are worth applying to.
 
 The scoring system takes into account the following factors:
@@ -187,13 +186,13 @@ Jobs are then tagged with different badge colors based on the score:
 - **Yellow Badge (3.0-5.0):** 🟡 Average
 - **Red Badge (below 3.0):** 🔴 Poor
 
-## Usage
+## ➡️Usage
 1. Install the extension from the Chrome Web Store.
 2. Go to the Upwork "Find work" page.
 3. (Optional) Click on the Upwork Job Score icon in the Chrome toolbar to set the minimum score for hiding jobs (default is 0).
 
-## Contributing
+## ➡️Contributing
 We’re open to contributions! If you find any bugs or have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
 
-## Disclaimer
+## ➡️Disclaimer
 Upwork Job Scorer is not affiliated, associated, authorized, sponsored by, endorsed by, or in any way officially or non-officially connected with Upwork or any of its subsidiaries or its affiliates. It is an open-source project developed to help freelancers make better choices and decisions when applying for jobs.

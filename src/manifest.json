@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "version": "1.0",
   "name": "Upwork Job Score",
-  "description": "A Chrome extension that rates Upwork job postings based on various criteria, helping freelancers identify high-quality opportunities quickly and efficiently.",
+  "description": "An extension that rates Upwork job postings based on various criteria, helping freelancers identify the best opportunities quickly.",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon-34.png"

@@ -38,14 +38,14 @@ const ScoreCircle = ({ color, score, label }) => (
 );
 
 const Popup = () => {
-  const [minScore, setMinScore] = useState('9');
+  const [minScore, setMinScore] = useState('0');
 
   useEffect(() => {
     loadMinScore();
   }, []);
 
   const loadMinScore = () => {
-    chrome.storage.sync.get({ minScore: '9' }, (result) => {
+    chrome.storage.sync.get({ minScore: '0' }, (result) => {
       console.log('Loaded minScore:', result.minScore);
       setMinScore(result.minScore.toString());
     });

@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "1.0",
+  "version": "1.1",
   "name": "Upwork Job Score",
   "description": "An extension that rates Upwork job postings based on various criteria, helping freelancers identify the best opportunities quickly.",
   "action": {

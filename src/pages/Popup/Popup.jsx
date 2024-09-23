@@ -124,7 +124,7 @@ const Popup = () => {
         <div className="footer-links">
           <a href="https://github.com/Mohamed3nan/UpworkJobScore" target="_blank" rel="noopener noreferrer">GitHub</a>
           <span className="separator">|</span>
-          <a href="https://chrome.google.com/webstore/detail/your-extension-id" target="_blank" rel="noopener noreferrer">Rate!</a>
+          <a href="https://chrome.google.com/webstore/detail/hnehgagohkaleaifdbackjhhibolhclo" target="_blank" rel="noopener noreferrer">Rate!</a>
           <p className="footer-credit">Made with ♥ by Anan</p>
         </div>
       </footer>

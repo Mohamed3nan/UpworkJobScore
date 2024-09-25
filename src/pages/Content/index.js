@@ -8,15 +8,58 @@
 import { Arrive } from './modules/arrive';
 import { helper } from './modules/helper';
 
-console.log('Upwork Rating Extension, Content script running');
+console.log('Upwork Job Score Extension, Content script running');
 
-document.arrive(
-    '[data-test="job-tile-list"] > section.air3-card-section, [data-test="JobsList"] > article.job-tile',
-    function (elem) {
-        console.log('Job tile created or found (elem)');
-        MainFunc([elem]);
+// document.arrive(
+//     '[data-test="job-tile-list"] > section.air3-card-section, [data-test="JobsList"] > article.job-tile',
+//     function (elem) {
+//         console.log('Job tile created or found (elem)');
+//         MainFunc([elem]);
+//     }
+// );
+
+// Function to process existing elements
+function processExistingElements() {
+    const selector = '[data-test="job-tile-list"] > section.air3-card-section, [data-test="JobsList"] > article.job-tile';
+    const existingElements = document.querySelectorAll(selector);
+    if (existingElements.length > 0) {
+        console.log('Processing existing job tiles:', existingElements.length);
+        MainFunc(Array.from(existingElements));
+    } else {
+        console.log('No existing job tiles found');
     }
-);
+}
+
+// Function to initialize everything
+function initialize() {
+    console.log('Initializing...');
+
+    // Process existing elements
+    processExistingElements();
+
+    // Set up arrive.js to watch for new elements
+    document.arrive(
+        '[data-test="job-tile-list"] > section.air3-card-section, [data-test="JobsList"] > article.job-tile',
+        function (elem) {
+            console.log('New job tile found');
+            MainFunc([elem]);
+        }
+    );
+}
+
+// Wait for DOM content to load, then initialize with a slight delay
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoaded event fired');
+    setTimeout(initialize, 1000); // 1 second delay
+});
+
+// Fallback: If DOMContentLoaded doesn't fire, initialize after a longer delay
+setTimeout(() => {
+    if (!document.querySelector('[data-test="job-tile-list"], [data-test="JobsList"]')) {
+        console.log('Fallback: Initializing after delay');
+        initialize();
+    }
+}, 3000); // 3 seconds delay
 
 
 function MainFunc(jobCards) {
